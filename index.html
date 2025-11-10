@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Сменщик</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Сменщик</h1>
+  <label for="shiftSelect">Выберите смену:</label>
+  <select id="shiftSelect">
+    <option value="morning">Утренняя смена</option>
+    <option value="evening">Вечерняя смена</option>
+  </select>
+<p></p>
+  <div class="form">
+    <label>Сумма продаж (₽): <input type="number" id="salesInput" /></label>
+    <label>Новые поступления: <input type="text" id="goodsInput" /></label>
+<label>Остаток в кассе (₽): <input type="number" id="cashInput" /></label>
+    <label>Остаток на складе: <input type="number" id="inventoryInput" /></label>
+    <label>Выполненные задачи: <input type="text" id="tasksInput" /></label>
+    <button onclick="saveShiftData()">Сохранить данные смены</button>
+  </div>
+
+  <h2>Сводка по сменам</h2>
+  <div id="summary"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
